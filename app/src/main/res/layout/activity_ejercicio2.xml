@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/primer"
+        android:id="@+id/lblPrimer"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPrimer"
+        android:inputType="number"
+        android:id="@+id/txtField1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtField1"
+        android:text="@string/segundo"
+        android:id="@+id/lblSegundo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtField2"
+        android:inputType="number"
+        android:layout_below="@+id/lblSegundo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSumar"
+        android:layout_below="@+id/txtField2"
+        android:text="+"
+        android:onClick="Operar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRestar"
+        android:layout_below="@+id/txtField2"
+        android:layout_toRightOf="@+id/btnSumar"
+        android:text="-"
+        android:onClick="Operar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMult"
+        android:layout_below="@+id/txtField2"
+        android:layout_toRightOf="@+id/btnRestar"
+        android:text="*"
+        android:onClick="Operar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDivide"
+        android:layout_below="@id/txtField2"
+        android:layout_toRightOf="@+id/btnMult"
+        android:text="/"
+        android:onClick="Operar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSumar"
+        android:text="@string/resultado"
+        android:textSize="20dp"
+        android:id="@+id/lblResult"/>
+
+</RelativeLayout>

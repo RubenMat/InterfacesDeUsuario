@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cámara 1:"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/lblCamara1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luz 1:"
+        android:id="@+id/lblLuz1"
+        android:layout_below="@id/lblCamara1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblCamara1"
+        android:paddingLeft="10dp"
+        android:id="@+id/switch1"
+        android:checked="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblLuz1"
+        android:layout_below="@id/switch1"
+        android:paddingLeft="35dp"
+        android:id="@+id/switch2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLuz1"
+        android:paddingLeft="5dp"
+        android:text="Cámara 2:"
+        android:paddingTop="15dp"
+        android:id="@+id/lblCamara2"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblCamara2"
+        android:layout_below="@id/switch2"
+        android:textOff="NO"
+        android:textOn="SÍ"
+        android:id="@+id/tglCamara"
+        android:enabled="true"
+        android:checked="true"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tglLuz"
+        android:layout_toRightOf="@+id/lblLuz2"
+        android:layout_below="@+id/tglCamara"
+        android:layout_marginLeft="25dp"
+        android:textOn="SÍ"
+        android:textOff="NO"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLuz2"
+        android:text="Luz 2:"
+        android:layout_below="@id/tglCamara"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblLuz2"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgCamara1"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblLuz2"
+        android:layout_toRightOf="@id/imgCamara1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/imgLuz1"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblLuz2"
+        android:layout_toRightOf="@id/imgLuz1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/imgCamara2"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblLuz2"
+        android:layout_toRightOf="@id/imgCamara2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/imgLuz2"/>
+
+</RelativeLayout>

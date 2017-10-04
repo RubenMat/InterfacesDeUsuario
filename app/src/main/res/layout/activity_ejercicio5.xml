@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnYahoo"
+        android:text="Yahoo"/>
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBing"
+        android:text="Bing"
+        android:layout_toRightOf="@+id/btnYahoo"/>
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGoogle"
+        android:text="Google"
+        android:layout_toRightOf="@id/btnBing"
+        android:onClick="imagenGoogle"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/btnBing"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/logo"
+        />
+
+</RelativeLayout>

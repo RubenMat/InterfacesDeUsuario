@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce PRIMER valor:"
+        android:id="@+id/lblPrimer"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPrimer"
+        android:inputType="number"
+        android:id="@+id/txtField1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtField1"
+        android:text="Introduce SEGUNDO valor:"
+        android:id="@+id/lblSegundo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSegundo"
+        android:inputType="number"
+        android:id="@+id/txtField2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMAR"
+        android:layout_below="@+id/txtField2"
+        android:id="@+id/btnSumar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSumar"
+        android:text="La suma es:"
+        android:textSize="20dp"
+        android:id="@+id/lblResult"/>
+
+</RelativeLayout>

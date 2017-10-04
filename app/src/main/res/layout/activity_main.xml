@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio1"
+        android:id="@+id/Ejercicio1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio2"
+        android:id="@+id/Ejercicio2"
+        android:layout_below="@id/Ejercicio1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ejercicio3"
+        android:text="Ejercicio3"
+        android:layout_below="@id/Ejercicio2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ejercicio4"
+        android:text="Ejercicio4"
+        android:layout_below="@id/Ejercicio3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio5"
+        android:id="@+id/Ejercicio5"
+        android:layout_below="@id/Ejercicio4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio6"
+        android:id="@+id/Ejercicio6"
+        android:layout_below="@id/Ejercicio5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio7"
+        android:id="@+id/Ejercicio7"
+        android:layout_below="@id/Ejercicio6"/>
+</RelativeLayout>

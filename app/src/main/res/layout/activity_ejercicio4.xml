@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce un DNI"
+        android:textSize="20dp"
+        android:id="@+id/dni"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni"
+        android:id="@+id/numeros"
+        android:inputType="number"
+        android:hint="Numeros DNI"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/guion"
+        android:layout_below="@id/dni"
+        android:layout_toRightOf="@+id/numeros"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni"
+        android:layout_toRightOf="@id/guion"
+        android:hint="Letra"
+        android:id="@+id/letra"
+        android:enabled="false"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numeros"
+        android:layout_marginLeft="100dp"
+        android:text="VALIDAR DNI"
+        android:id="@+id/btnValidar"/>
+
+</RelativeLayout>
